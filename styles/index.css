@@ -5,13 +5,13 @@ body {
 }
 
 h1 {
-  font-size: 60px;
-  font-weight: bold;
+  font-size: 70px;
+  font-weight: 950;
   letter-spacing: 4px;
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 52.5px;
 }
 
 h3 {
@@ -23,6 +23,7 @@ h3 {
 h4 {
   font-size: 20px;
   margin-bottom: 10px;
+  font-weight: 950;
 }
 
 section {
@@ -35,7 +36,7 @@ h4 {
   text-transform: uppercase;
 }
 
-#contact-icons a {
+.contact-icons a {
   text-decoration: none;
 }
 
@@ -55,7 +56,7 @@ h4 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 #hero-image-text h1 {
@@ -69,7 +70,6 @@ h4 {
 }
 
 #about-me-container p {
-  /* padding: 0 80px; */
   line-height: 40px;
   align-self: center;
 }
@@ -82,12 +82,6 @@ h4 {
 }
 
 /* SKILLS */
-
-/* .fas.fa-database,
-.fas.fa-server,
-.fas.fa-desktop {
-  color: white;
-} */
 
 #skills-cards {
   display: flex;
@@ -104,8 +98,6 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* text-align: center;
-  align-items: center; */
 }
 
 #skills-section {
@@ -137,7 +129,6 @@ h4 {
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  /* border-radius: 10px; */
   box-shadow: 0 0 8px 0 #d4d4d4;
 }
 
@@ -165,18 +156,17 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* background-color: #f5f5f5; */
   background-color: #2a2a2a;
   color: #d4d4d4;
 }
 
 .project-card-front p {
-  font-size: 12px;
+  font-size: 13px;
   margin-top: 20px;
 }
 
 .project-card-front p:last-of-type {
-  font-weight: 700;
+  font-weight: 900;
   font-size: 14px;
 }
 
@@ -189,15 +179,16 @@ h4 {
 }
 
 .project-card-back a {
-  padding: 10px 0;
-  width: 100px;
+  padding: 12px 0;
+  width: 110px;
   background-color: white;
   color: #2a2a2a;
   border-radius: 20px;
   text-align: center;
+  text-transform: uppercase;
   text-decoration: none;
-  font-size: 12px;
-  margin-bottom: 10px;
+  font-size: 10px;
+  margin-top: 10px
 }
 
 /* Footer */
@@ -209,8 +200,24 @@ header nav {
   background-color: #2a2a2a;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+}
+
+footer {
+  justify-content: flex-start;
   align-items: center;
+}
+
+header nav {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.contact-icons a:last-of-type {
+  margin-right: 2em;
+}
+
+.contact-icons a:first-of-type {
+  margin-left: 2em;
 }
 
 .fab.fa-linkedin,
@@ -218,4 +225,75 @@ header nav {
 .fas.fa-envelope {
   padding: 0 20px 0 20px;
   color: white;
+}
+
+@media only screen and (max-width: 720px) {
+  h1 {
+    font-size: 50px;
+    font-weight: 950;
+    letter-spacing: 2px;
+  }
+
+  h2 {
+    font-size: 37.5px;
+  }
+
+  h3 {
+    font-size: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 950;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+}
+
+@media only screen and (max-width: 460px) {
+
+  footer,
+  header nav {
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 30px;
+    font-weight: 950;
+    letter-spacing: 2px;
+  }
+
+  h2 {
+    font-size: 22.5px;
+  }
+
+  h3 {
+    font-size: 15px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: 950;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  #skills-cards li {
+    font-size: 10px;
+  }
+
+  #skills-cards div {
+    width: 70px;
+  }
 }
