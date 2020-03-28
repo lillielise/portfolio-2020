@@ -178,7 +178,7 @@ h4 {
 
 .pop-up-demo {
   position: fixed;
-  display: flex;
+  display: none;
   flex-direction: column;
   width: 700px;
   height: 500px;
