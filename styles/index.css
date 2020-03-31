@@ -1,34 +1,31 @@
 body {
-  font-family: "Varela Round", sans-serif;
+  font-family: "Cutive Mono", monospace;
   margin: 0 auto;
   color: #2a2a2a;
 }
 
 h1 {
   font-size: 70px;
-  font-weight: 950;
+  font-weight: bolder;
   letter-spacing: 4px;
 }
 
 h2 {
-  font-size: 52.5px;
+  font-size: 55px;
   margin-bottom: 60px;
+  font-weight: bold;
 }
 
 h3 {
-  font-size: 25px;
+  font-size: 40px;
   margin-bottom: 50px;
   text-align: center;
+  font-weight: bold;
 }
 
 h4 {
-  font-size: 20px;
+  font-size: 30px;
   margin-bottom: 10px;
-  font-weight: 950;
-}
-
-section {
-  padding: 100px 0;
 }
 
 h1,
@@ -41,14 +38,18 @@ h4 {
   text-decoration: none;
 }
 
+section {
+  padding: 50px;
+}
+
 /* ABOUT */
 
 #about-me-container {
-  padding: 0 15vw;
+  padding: 0 10vw;
 }
 
 #about-me-container p {
-  line-height: 40px;
+  line-height: 55px;
   align-self: center;
 }
 
@@ -67,34 +68,27 @@ h4 {
   justify-content: space-evenly;
   text-align: center;
   align-items: center;
-  transform: skewY(3deg);
 }
 
 #skills-cards div {
   height: 175px;
-  width: 175px;
+  width: 195px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 #skills-section {
-  background-color: rgba(0, 51, 102, 0.5);
-  transform: skewY(-3deg);
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-#skills-section h3 {
-  transform: skewY(5deg);
-}
-
 /* PROJECTS */
 
 .project-card {
-  width: 300px;
-  height: 250px;
+  width: 525px;
+  height: 325px;
   margin: 0 1em 2em 1em;
   background-color: transparent;
   perspective: 1000px;
@@ -121,13 +115,7 @@ h4 {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 3px;
-  box-shadow: 0 0 4px 0 gray;
-}
-
-.project-card-back {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  box-shadow: 0 0 4px 0 #66fcf1;
 }
 
 .project-card-front {
@@ -139,39 +127,68 @@ h4 {
 }
 
 .project-card-front p {
-  font-size: 13px;
+  font-size: 18px;
   margin-top: 20px;
-}
-
-.project-card-front p:last-of-type {
-  font-weight: 900;
-  font-size: 16px;
+  padding: 0 10px;
 }
 
 .project-card-back {
-  background-color: rgba(0, 51, 102, 0.5);
-  color: white;
+  background-color: #45a29e;
   transform: rotateY(180deg);
-  align-items: center;
 }
 
-.project-card-back a,
+/* .project-card-back a,
 .project-card-back p {
   padding: 8px 0;
-  width: 110px;
-  background-color: white;
-  box-shadow: 0 0 4px 0 gray;
+  width: 150px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 2px 0 #66fcf1;
   color: #2a2a2a;
   border-radius: 20px;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 10px;
+  font-size: 18px;
+  margin-top: 10px;
+} */
+
+/* .project-card-back p:hover,
+.project-card-back a:hover {
+  cursor: pointer;
+  background-color: white;
+} */
+
+.project-card-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  align-items: center;
+}
+
+.project-card-buttons a,
+.project-card-buttons p {
+  padding: 8px 0;
+  width: 150px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 2px 0 #66fcf1;
+  color: #2a2a2a;
+  border-radius: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 18px;
   margin-top: 10px;
 }
 
-.project-card-back p:hover {
+.project-card-buttons p:hover,
+.project-card-buttons a:hover {
   cursor: pointer;
+  background-color: white;
+}
+
+#project-card-buttons-mobile {
+  display: none;
 }
 
 /* Pop up */
@@ -180,17 +197,16 @@ h4 {
   position: fixed;
   display: none;
   flex-direction: column;
-  width: 700px;
-  height: 500px;
+  width: 900px;
+  height: 700px;
   top: 50%;
   left: 50%;
-  margin-top: -200px;
-  margin-left: -350px;
+  margin-top: -350px;
+  margin-left: -450px;
   border: 1px #2a2a2a solid;
   border-radius: 3px;
   overflow: hidden;
   background-color: white;
-
 }
 
 .fas.fa-times {
@@ -217,23 +233,22 @@ h4 {
 
 /* Footer */
 
+footer {
+  background-color: #2a2a2a;
+  justify-content: flex-start;
+}
+
 footer,
 header nav {
   height: 80px;
   width: 100%;
-  background-color: #2a2a2a;
   display: flex;
   flex-direction: row;
-}
-
-footer {
-  justify-content: flex-start;
   align-items: center;
 }
 
 header nav {
   justify-content: flex-end;
-  align-items: center;
 }
 
 .contact-icons a:last-of-type {
@@ -251,23 +266,32 @@ header nav {
   color: white;
 }
 
+.fab.fa-linkedin:hover,
+.fab.fa-github:hover,
+.fas.fa-envelope:hover {
+  color: #66fcf1;
+}
+
 /* HEADER */
+
+header {
+  background-color: #45a29e;
+}
 
 #hero-image-container {
   width: 100%;
   height: 625px;
-  background-image: url("https://images.unsplash.com/photo-1523127914958-b8e150c4463f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
   color: #2a2a2a;
   margin: 0 auto;
 }
 
 #hero-image-text {
   height: 100%;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.6);
 }
 
 #hero-image-text h1 {
@@ -276,16 +300,16 @@ header nav {
 
 #hero-image-button {
   text-decoration: none;
-  color: black;
-  box-shadow: 0 0 20px 0 gray;
+  color: #45a29e;
   background-color: rgba(255, 255, 255, 0.7);
-  border-radius: 50px;
+  border-radius: 3px;
   font-size: 18px;
-  padding: 15px 40px;
+  padding: 15px 20px;
 }
 
 #hero-image-button:hover {
-  background-color: rgba(255, 255, 255, 1);
+  background-color: white;
+  color: #2a2a2a;
 }
 
 @media only screen and (max-width: 1330px) {
@@ -293,12 +317,51 @@ header nav {
     width: 70%;
     margin: 0 auto;
   }
+  #about-me-container p {
+    line-height: 45px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .pop-up-demo {
+    width: 700px;
+    height: 550px;
+    margin-top: -275px;
+    margin-left: -350px;
+  }
+
+  h1 {
+    font-size: 60px;
+    letter-spacing: 2px;
+  }
+
+  h2 {
+    font-size: 45px;
+  }
+
+  h3 {
+    font-size: 35px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  #about-me-container p {
+    line-height: 35px;
+  }
 }
 
 @media only screen and (max-width: 720px) {
   h1 {
     font-size: 50px;
-    font-weight: 950;
     letter-spacing: 2px;
   }
 
@@ -315,7 +378,6 @@ header nav {
   h4 {
     font-size: 20px;
     margin-bottom: 10px;
-    font-weight: 950;
   }
 
   p {
@@ -325,15 +387,16 @@ header nav {
   .pop-up-demo {
     width: 500px;
     height: 350px;
-    top: 50%;
-    left: 50%;
     margin-top: -175px;
     margin-left: -250px;
+  }
+
+  #about-me-container p {
+    line-height: 25px;
   }
 }
 
 @media only screen and (max-width: 460px) {
-
   footer,
   header nav {
     justify-content: center;
@@ -341,7 +404,6 @@ header nav {
 
   h1 {
     font-size: 30px;
-    font-weight: 950;
     letter-spacing: 2px;
   }
 
@@ -350,18 +412,17 @@ header nav {
   }
 
   h3 {
-    font-size: 15px;
+    font-size: 20px;
     margin-bottom: 50px;
     text-align: center;
   }
 
   h4 {
-    font-size: 15px;
+    font-size: 18px;
     margin-bottom: 10px;
-    font-weight: 950;
   }
 
-  p {
+  .project-card-front p {
     font-size: 14px;
   }
 
@@ -380,5 +441,20 @@ header nav {
     left: 50%;
     margin-top: -125px;
     margin-left: -150px;
+  }
+
+  #project-card-buttons-mobile {
+    display: flex;
+    margin-top: 10px;
+  }
+
+  #project-card-buttons-mobile p,
+  #project-card-buttons-mobile a {
+    font-size: 14px;
+  }
+
+  .project-card {
+    width: 525px;
+    height: 325px;
   }
 }
