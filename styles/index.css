@@ -87,7 +87,7 @@ section {
 /* PROJECTS */
 
 .project-card {
-  width: 525px;
+  width: 400px;
   height: 300px;
   margin: 0 1em 2em 1em;
   background-color: transparent;
@@ -145,12 +145,15 @@ section {
   align-items: center;
 }
 
+.project-card-back h4 {
+  color: #2a2a2a;
+}
+
 .project-card-buttons a,
 .project-card-buttons p {
   padding: 8px 0;
   width: 150px;
   background-color: rgba(255, 255, 255, 0.7);
-  box-shadow: 0 0 2px 0 #66fcf1;
   color: #2a2a2a;
   border-radius: 20px;
   text-align: center;
@@ -168,6 +171,10 @@ section {
 
 .project-card-buttons-mobile {
   display: none;
+}
+
+.project-card-tech {
+  text-transform: uppercase;
 }
 
 /* Pop up */
