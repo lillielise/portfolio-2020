@@ -39,18 +39,24 @@ h4 {
 }
 
 section {
-  padding: 50px;
+  margin: 50px;
 }
 
 /* ABOUT */
 
 #about-me-container {
   padding: 0 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #about-me-container p {
-  line-height: 55px;
+  line-height: 30px;
   align-self: center;
+  margin-left: 5vw;
+  margin-top: 50px;
 }
 
 .cards {
@@ -58,6 +64,12 @@ section {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+#headshot-img {
+  height: 225px;
+  width: 225px;
+  border-radius: 150px;
 }
 
 /* SKILLS */
@@ -87,8 +99,8 @@ section {
 /* PROJECTS */
 
 .project-card {
-  width: 400px;
-  height: 300px;
+  width: 450px;
+  height: 400px;
   margin: 0 1em 2em 1em;
   background-color: transparent;
   perspective: 1000px;
@@ -115,7 +127,7 @@ section {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 3px;
-  box-shadow: 0 0 4px 0 #66fcf1;
+  box-shadow: 0 0 4px 0 #d3d3d3;
 }
 
 .project-card-front {
@@ -128,21 +140,17 @@ section {
 
 .project-card-front p {
   font-size: 18px;
-  margin-top: 20px;
-  padding: 0 10px;
+  margin: 20px 40px 0 40px;
 }
 
 .project-card-back {
-  background-color: #45a29e;
-  transform: rotateY(180deg);
-}
-
-.project-card-buttons {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   color: white;
   align-items: center;
+  background-color: #d3d3d3;
+  transform: rotateY(180deg);
 }
 
 .project-card-back h4 {
@@ -151,15 +159,16 @@ section {
 
 .project-card-buttons a,
 .project-card-buttons p {
-  padding: 8px 0;
+  padding: 6px 0;
   width: 150px;
   background-color: rgba(255, 255, 255, 0.7);
-  color: #2a2a2a;
+  text-decoration: none;
   border-radius: 20px;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 12px;
+  color: #2a2a2a;
   margin-top: 10px;
 }
 
@@ -169,12 +178,25 @@ section {
   background-color: white;
 }
 
+.project-card-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
 .project-card-buttons-mobile {
   display: none;
 }
 
 .project-card-tech {
   text-transform: uppercase;
+}
+
+#petster-img {
+  height: 50%;
+}
+
+.website-img {
+  width: 50%;
 }
 
 /* Pop up */
@@ -379,6 +401,11 @@ header {
 
   #about-me-container p {
     line-height: 25px;
+    margin-left: 0;
+  }
+
+  section {
+    margin: 30px;
   }
 }
 
