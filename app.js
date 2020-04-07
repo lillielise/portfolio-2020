@@ -6,7 +6,13 @@ document.querySelector(".fas.fa-times").onclick = function (event) {
 };
 
 document.querySelector(".project-card-front").onclick = function (event) {
-  console.log("heyy");
+  document.querySelector(".project-card-inner").style.transform =
+    "rotateY(180deg)";
+};
+
+document.querySelector(".project-card-back").onclick = function (event) {
+  document.querySelector(".project-card-inner").style.transform =
+    "rotateY(360deg)";
 };
 
 function handleDemoClick() {
