@@ -40,13 +40,16 @@
     <section>
       <h3>About me</h3>
       <div id="about-me-container">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Leo duis ut diam quam nulla porttitor massa id. Vestibulum sed arcu non odio euismod lacinia at
-          quis risus. Sed vulputate odio ut enim blandit volutpat maecenas. Arcu vitae elementum curabitur vitae nunc
-          sed
-          velit dignissim sodales.</p>
+        <div>
+          <img id="headshot" src="./img/headshot.jpg">
+        </div>
+        <div>
+          <p>Prior to Software Engineering, I worked as an Office Manager at a local tech startup. I wasn't getting a lot of value from my work, and wanted to find something more fulfilling where I could have a greater impact. I was drawn to the challenge and collaborative aspect of software development. So I decided to go to a coding bootcamp to gain a strong foundation in development. I am excited to join a team and continue to grow!
+          </p>
+        </div>
       </div>
     </section>
+
     <section id="skills-section">
 
       <h3>Skills</h3>
@@ -77,32 +80,106 @@
           </ul>
         </div>
       </div>
-
     </section>
+
+
     <section id="project-section">
       <h3>Projects</h3>
-      <div class="cards">
+      <hr>
+      <div id="project-cards-container">
         <div class="project-card">
-          <div class="project-card-inner">
-            <div class="project-card-front">
+            <div id="petster-img-container">
+              <img id="petster-img" class="col-1" src="https://static.wixstatic.com/media/735706_e4ff16cc0ce94735ad5c17b972c5b699~mv2.png/v1/fill/w_572,h_1040,al_c,q_90/735706_e4ff16cc0ce94735ad5c17b972c5b699~mv2.webp">
+              </div>
+              <div class="col-2">
               <h4>Petster</h4>
-              <p>Mobile pet adoption application </p>
-              <p class="project-card-tech">React Native | Redux | Node.js | PostgreSQL | Firebase</p>
-              <div class="project-card-buttons project-card-buttons-mobile">
-                <p class="demo-petster-button">Demo</p>
+              <p class="project-card-text">Mobile pet adoption application using PetFinders API. Collaborated with another software developer and UX designer. Personally responsible for building the backend server and implementing the design</p>
+              <p class="project-card-text">Tech used: <span id="project-card-text-tech">React Native, Redux, Node.js, PostgreSQL, Firebase, Expo </span></p>
+
+              <div class="project-card-buttons">
+                <p onclick="handleDemoClick()" class="demo-petster-button">Demo</p>
                 <a href="https://github.com/petster-app" target="_blank">Source code</a>
+            </div>
+            </div>
+  
+        </div>
+        <hr>
+
+        <div id="project-cards-container">
+          <div class="project-card">
+              <img class="color-swatches-desktop" class="col-1" src="./img/color-swatches.png">
+                <div id="color-swatches-col-2" class="col-2">
+                <h4>Valley Installers</h4>
+                <p class="project-card-text">Mobile pet adoption application using PetFinders API. Collaborated with another software developer and UX designer.</p>
+                <p class="project-card-text">Tech used: <span id="project-card-text-tech">React, Next.js, CSS, HTML</span></p>
+  
+                <div class="project-card-buttons">
+                  <a href="https://www.w3schools.com" target="_blank">Web page</a>
+                  <a href="https://github.com/Valley-Installers/valley-installers-website" target="_blank">Source code</a>
               </div>
             </div>
-            <div class="project-card-back project-card-buttons">
-              <h4>Petster</h4>
-              <p onclick="handleDemoClick()" class="demo-petster-button">Demo</p>
-              <a href="https://github.com/petster-app" target="_blank">Source code</a>
+          </div>
+                <hr>
+
+        <div id="project-cards-container">
+          <div class="project-card">
+              <img class="color-swatches-desktop" class="col-1" src="./img/color-swatches.png">
+                <div id="color-swatches-col-2" class="col-2">
+                <h4>Color Swatches</h4>
+                <p class="project-card-text">Mobile pet adoption application using PetFinders API. Collaborated with another software developer and UX designer.</p>
+                <p class="project-card-text">Tech used: <span id="project-card-text-tech">React, CSS, HTML</span></p>
+  
+                <div class="project-card-buttons">
+                  <a href="https://color-swatches-lg.herokuapp.com/" class="demo-petster-button">Website</a>
+                  <a href="https://github.com/petster-app" target="_blank">Source code</a>
+              </div>
             </div>
           </div>
-        </div>
+          <hr>
 
-        <div class="project-card">
-          <div class="project-card-inner">
+          <div id="project-cards-container">
+            <div class="project-card">
+                <img class="color-swatches-desktop" class="col-1" src="./img/color-swatches.png">
+                  <div id="color-swatches-col-2" class="col-2">
+                  <h4>Case Hawk</h4>
+                  <p class="project-card-text">Mobile pet adoption application using PetFinders API. Collaborated with another software developer and UX designer.</p>
+                  <p class="project-card-text">Tech used: <span id="project-card-text-tech">React, CSS, HTML</span></p>
+    
+                  <div class="project-card-buttons">
+                    <a href="https://color-swatches-lg.herokuapp.com/" class="demo-petster-button">Website</a>
+                    <a href="https://github.com/petster-app" target="_blank">Source code</a>
+                </div>
+              </div>
+            </div>
+            <hr>
+
+            <div id="project-cards-container">
+              <div class="project-card">
+                  <img class="color-swatches-desktop" class="col-1" src="./img/color-swatches.png">
+                    <div id="color-swatches-col-2" class="col-2">
+                    <h4>Heeded</h4>
+                    <p class="project-card-text">Mobile pet adoption application using PetFinders API. Collaborated with another software developer and UX designer.</p>
+                    <p class="project-card-text">Tech used: <span id="project-card-text-tech">React, CSS, HTML</span></p>
+      
+                    <div class="project-card-buttons">
+                      <a href="https://color-swatches-lg.herokuapp.com/" class="demo-petster-button">Website</a>
+                      <a href="https://github.com/petster-app" target="_blank">Source code</a>
+                  </div>
+                </div>
+              </div>
+    
+
+
+            <!-- </div>
+          </div> -->
+
+
+
+
+
+
+
+          <!-- <div class="project-card-inner">
             <div class="project-card-front">
               <h4>Valley Installers</h4>
               <p>Responsive website for a small business</p>
@@ -171,7 +248,8 @@
               <a href="https://github.com/401-heeded/Heeded-Final-App" target="_blank">Source code</a>
             </div>
           </div>
-        </div>
+        </div> -->
+      </div>
     </section>
     <footer>
       <div class="contact-icons">
