@@ -140,7 +140,8 @@ section {
 
 .project-card-front p {
   font-size: 18px;
-  margin: 20px 40px 0 40px;
+  /* margin: 20px 40px 0 40px; */
+  margin: 2vw;
 }
 
 .project-card-back {
@@ -183,10 +184,6 @@ section {
   flex-direction: column;
 }
 
-.project-card-buttons-mobile {
-  display: none;
-}
-
 .project-card-tech {
   text-transform: uppercase;
 }
@@ -197,6 +194,14 @@ section {
 
 .website-img {
   width: 50%;
+  border: 1px black solid;
+  border-radius: 3px;
+}
+
+.project-card-back-mobile {
+  color: #2a2a2a;
+  width: 90%;
+  display: none;
 }
 
 /* Pop up */
@@ -373,6 +378,10 @@ header {
     letter-spacing: 2px;
   }
 
+  #hero-image-text h1 {
+    padding: 5px;
+  }
+
   h2 {
     font-size: 37.5px;
   }
@@ -389,7 +398,7 @@ header {
   }
 
   p {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .pop-up-demo {
@@ -435,10 +444,6 @@ header {
     margin-bottom: 10px;
   }
 
-  .project-card-front p {
-    font-size: 14px;
-  }
-
   #skills-cards li {
     font-size: 10px;
   }
@@ -456,18 +461,16 @@ header {
     margin-left: -150px;
   }
 
-  #project-card-buttons-mobile {
-    display: flex;
-    margin-top: 10px;
-  }
-
-  #project-card-buttons-mobile p,
-  #project-card-buttons-mobile a {
-    font-size: 14px;
-  }
-
-  .project-card {
+  /* .project-card {
     width: 525px;
     height: 325px;
+  } */
+
+  .project-card .project-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .project-card-back-mobile {
+    display: block;
   }
 }
