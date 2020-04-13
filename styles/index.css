@@ -1,5 +1,5 @@
 body {
-  font-family: "Cutive Mono", monospace;
+  font-family: "Avenir";
   margin: 0 auto;
   color: #2a2a2a;
 }
@@ -10,13 +10,13 @@ h1 {
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 60px;
   margin-top: 20px;
 }
 
 h3 {
   font-size: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   text-align: center;
   font-weight: bold;
 }
@@ -26,36 +26,15 @@ h4 {
   margin-bottom: 10px;
 }
 
-/* h1,
-h3,
-h4 {
-  text-transform: uppercase;
-} */
-
 .contact-icons a {
   text-decoration: none;
 }
 
 section {
-  margin: 50px;
+  margin: 80px;
 }
 
 /* ABOUT */
-
-/* #about-me-container {
-  padding: 0 5vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#about-me-container p {
-  line-height: 30px;
-  align-self: center;
-  margin-left: 5vw;
-  margin-top: 50px;
-} */
 
 .cards {
   display: flex;
@@ -132,6 +111,7 @@ section {
 
 .project-card-front p {
   font-size: 18px;
+  line-height: 20px;
   margin: 2vw;
 }
 
@@ -178,6 +158,7 @@ section {
 
 .project-card-tech {
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 #petster-img {
@@ -232,8 +213,20 @@ section {
 .pop-up-demo-content {
   height: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.pop-up-demo-content video {
+  height: 85%;
+}
+
+.pop-up-demo-content-features {
+  width: 40%;
+}
+
+.pop-up-demo-content-features li {
+  margin: 5%;
 }
 
 /* Footer */
@@ -305,27 +298,8 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   width: 50%;
 }
-
-/* #hero-image-text h1 {
-  padding: 30px;
-} */
-
-/* #hero-image-button {
-  text-decoration: none;
-  color: #45a29e;
-  background-color: rgba(255, 255, 255, 0.7);
-  border-radius: 3px;
-  font-size: 18px;
-  padding: 15px 20px;
-}
-
-#hero-image-button:hover {
-  background-color: white;
-  color: #2a2a2a;
-} */
 
 #headshot-img {
   height: 250px;
@@ -358,7 +332,6 @@ header {
 
   h3 {
     font-size: 35px;
-    margin-bottom: 50px;
     text-align: center;
   }
 
@@ -407,7 +380,6 @@ header {
 
   h3 {
     font-size: 20px;
-    margin-bottom: 50px;
     text-align: center;
   }
 
@@ -423,8 +395,6 @@ header {
   .pop-up-demo {
     width: 500px;
     height: 350px;
-    /* margin-top: -175px;
-    margin-left: -250px; */
     transform: translate(-50%, -50%);
   }
 
@@ -432,13 +402,10 @@ header {
     line-height: 25px;
     margin-left: 0;
   }
-
-  section {
-    margin: 10px;
-  }
 }
 
 @media only screen and (max-width: 460px) {
+
   footer,
   header nav {
     justify-content: center;
@@ -455,7 +422,6 @@ header {
 
   h3 {
     font-size: 20px;
-    margin-bottom: 50px;
     text-align: center;
   }
 
@@ -489,5 +455,9 @@ header {
 
   .project-card-back-mobile {
     display: block;
+  }
+
+  section {
+    margin: 60px 10px 60px 10px;
   }
 }

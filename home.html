@@ -8,45 +8,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./styles/reset.css">
   <script src="https://kit.fontawesome.com/709bddccc9.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Roboto+Mono:300,400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Roboto+Mono:300,400,700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./styles/index.css">
 </head>
 
 <body>
   <div id="content">
     <header>
-    <nav>
-  <div class="contact-icons">
-    <a href="https://www.linkedin.com/in/lilliangales/" target="_blank">
-      <i class="fab fa-linkedin fa-2x"></i>
-    </a>
-    <a href="https://github.com/lillielise" target="_blank">
-      <i class="fab fa-github fa-2x"></i>
-    </a>
-    <a href="mailto:lillianlisegales@gmail.com" target="_blank">
-      <i class="fas fa-envelope fa-2x"></i>
-    </a>
-  </div>
-</nav>
+      <nav>
+        <div class="contact-icons">
+          <a href="https://www.linkedin.com/in/lilliangales/" target="_blank">
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+          <a href="https://github.com/lillielise" target="_blank">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+          <a href="mailto:lillianlisegales@gmail.com" target="_blank">
+            <i class="fas fa-envelope fa-2x"></i>
+          </a>
+        </div>
+      </nav>
 
       <div id="hero-image-container">
         <div id="hero-image-content">
           <div id="hero-image-text">
             <h1>Hi, I'm Lillian!</h1>
             <h2>A Full Stack Developer based in Seattle</h2>
-            <!-- <a id="hero-image-button" href="#project-section">Check out my projects!</a> -->
           </div>
-        <img id="headshot-img" src="./img/headshot-square.jpg">
+          <img id="headshot-img" src="./assets/headshot-square.jpg">
         </div>
       </div>
     </header>
-    <!-- <section>
-      <h3>About me</h3>
-      <div id="about-me-container">
-        <img id="headshot-img" src="./img/headshot.jpg">
-        <p>Prior to Software Engineering, I worked as an Office Manager at a local tech startup. I wasn't getting a lot of value from my work, and wanted to find something more fulfilling where I could have a greater impact. I was drawn to the challenge and collaborative aspect of software development. So I decided to go to a coding bootcamp to gain a strong foundation in development. I am excited to join a team and continue to grow!</p>
-      </div>
-    </section> -->
     <section id="skills-section">
 
       <h3>Skills</h3>
@@ -91,10 +84,11 @@
             </div>
             <div class="project-card-back">
               <h4>Petster</h4>
-              <img id="petster-img" src="https://static.wixstatic.com/media/735706_e4ff16cc0ce94735ad5c17b972c5b699~mv2.png/v1/fill/w_572,h_1040,al_c,q_90/735706_e4ff16cc0ce94735ad5c17b972c5b699~mv2.webp">
-              <div class="project-card-back-mobile"> 
-              <p>Mobile pet adoption application build with React Native, Redux, Node.js, PosgreSQL, and Firebase </p>
-            </div>
+              <img id="petster-img"
+                src="https://static.wixstatic.com/media/735706_e4ff16cc0ce94735ad5c17b972c5b699~mv2.png/v1/fill/w_572,h_1040,al_c,q_90/735706_e4ff16cc0ce94735ad5c17b972c5b699~mv2.webp">
+              <div class="project-card-back-mobile">
+                <p>Mobile pet adoption application built with React Native, Redux, Node.js, PosgreSQL, and Firebase</p>
+              </div>
               <div class="project-card-buttons">
                 <p onclick="handleDemoClick()" class="demo-petster-button">Demo</p>
                 <a href="https://github.com/petster-app" target="_blank">Source code</a>
@@ -107,15 +101,21 @@
           <div class="project-card-inner">
             <div class="project-card-front">
               <h4>Valley Installers</h4>
-              <p>Responsive website for a small laminate installation business. Contract work collaborated with another developer.</p>
+              <p>Responsive website for a small laminate installation business. Contract work collaborated with another
+                developer.</p>
               <p class="project-card-tech">React | Next.js | CSS | HTML</p>
             </div>
             <div class="project-card-back">
               <h4>Valley Installers</h4>
-              <img class="website-img" src="./img/valley-installers.png">
+              <img class="website-img" src="./assets/valley-installers.png">
+              <div class="project-card-back-mobile">
+                <p>Responsive website for a small laminate installation business built with React, Next.js, CSS, and
+                  HTML</p>
+              </div>
               <div class="project-card-buttons">
-              <a href="https://www.w3schools.com" target="_blank">Website</a>
-              <a href="https://github.com/Valley-Installers/valley-installers-website" target="_blank">Source code</a>
+                <!-- <a href="https://www.w3schools.com" target="_blank">Website - COMING SOON</a> -->
+                <p>Website - COMING SOON</p>
+                <a href="https://github.com/Valley-Installers/valley-installers-website" target="_blank">Source code</a>
               </div>
             </div>
           </div>
@@ -125,15 +125,19 @@
           <div class="project-card-inner">
             <div class="project-card-front">
               <h4>Color Swatches</h4>
-              <p>An app that displays random color swatches, allowing you to filter by color family and search for a color swatch.</p>
+              <p>An app that displays random color swatches, allowing you to filter by color family and search for a
+                color swatch.</p>
               <p class="project-card-tech">React | CSS | HTML</p>
             </div>
             <div class="project-card-back">
               <h4>Color Swatches</h4>
-              <img class="website-img" src="./img/color-swatches.png">
+              <img class="website-img" src="./assets/color-swatches.png">
+              <div class="project-card-back-mobile">
+                <p>An app that displays random color swatches built with React, CSS, and HTML</p>
+              </div>
               <div class="project-card-buttons">
-              <a href="http://color-swatches-lg.herokuapp.com/" target="_blank">Website</a>
-              <a href="https://github.com/lillielise/color-swatch-app" target="_blank">Source code</a>
+                <a href="http://color-swatches-lg.herokuapp.com/" target="_blank">Website</a>
+                <a href="https://github.com/lillielise/color-swatch-app" target="_blank">Source code</a>
               </div>
             </div>
           </div>
@@ -143,13 +147,17 @@
           <div class="project-card-inner">
             <div class="project-card-front">
               <h4>CaseHawk</h4>
-              <p>Internal case management tool for a law firm</p>
+              <p>Internal case management tool for a law firm. Worked on a team of 10 developers to rebuild a site from
+                PHP to JavaScript/React.</p>
               <p class="project-card-tech">React | Node.js | Prisma</p>
             </div>
             <div class="project-card-back">
               <h4>CaseHawk</h4>
+              <div class="project-card-back-mobile">
+                <p>Internal case management tool for a law firm built with React, Node.js, and Prisma</p>
+              </div>
               <div class="project-card-buttons">
-              <a href="https://github.com/JS-401-Final" target="_blank">Source code</a>
+                <a href="https://github.com/JS-401-Final" target="_blank">Source code</a>
               </div>
             </div>
           </div>
@@ -159,13 +167,17 @@
           <div class="project-card-inner">
             <div class="project-card-front">
               <h4>Heeded</h4>
-              <p>Audience engagement analyzer application</p>
+              <p>Audience engagement analyzer application. Collaborated with a team of developers for my Code Fellows
+                midterm project.</p>
               <p class="project-card-tech">Javascript | Node.js | AWS</p>
             </div>
             <div class="project-card-back">
               <h4>Heeded</h4>
+              <div class="project-card-back-mobile">
+                <p>Audience engagement analyzer application built with JavaScript, Node.js and AWS</p>
+              </div>
               <div class="project-card-buttons">
-              <a href="https://github.com/401-heeded/Heeded-Final-App" target="_blank">Source code</a>
+                <a href="https://github.com/401-heeded/Heeded-Final-App" target="_blank">Source code</a>
               </div>
             </div>
           </div>
@@ -191,7 +203,21 @@
       <i class="fas fa-times fa"></i>
     </div>
     <div class="pop-up-demo-content">
-      <h3>COMING SOON</h3>
+      <video controls>
+        <source src="./assets/petster-demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <!-- <div class="pop-up-demo-content-features">
+        <h3>Features</h3>
+        <ul>
+          <li>Firebase Authentiation</li>
+          <li>Node.js server for searching petfinder's API, saving user's favorites, and search preferences</li>
+          <li>Firebase Authentiation</li>
+          <li>Firebase Authentiation</li>
+          <li>Firebase Authentiation</li>
+          <li>Firebase Authentiation</li>
+        </ul>
+      </div> -->
     </div>
   </div>
 
