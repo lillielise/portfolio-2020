@@ -180,9 +180,8 @@ section {
 }
 
 #petster-img {
-  /* height: 60%; */
   height: 225px;
-  width: 150px;
+  width: auto;
 }
 
 .website-img {
