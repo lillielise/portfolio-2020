@@ -45,8 +45,8 @@
       <h3>Skills</h3>
       <div id="skills-cards">
         <div>
-          <h4>Front End</h4>
           <i class="fas fa-database fa-3x"></i>
+          <h4>Front End</h4>
           <ul>
             <li>React / React Native</li>
             <li>HTML / CSS</li>
@@ -54,16 +54,16 @@
           </ul>
         </div>
         <div>
-          <h4>Server</h4>
           <i class="fas fa-server fa-3x"></i>
+          <h4>Server</h4>
           <ul>
             <li>Node.js</li>
             <li>Express</li>
           </ul>
         </div>
         <div>
-          <h4>Database</h4>
           <i class="fas fa-desktop fa-3x"></i>
+          <h4>Database</h4>
           <ul>
             <li>PostgreSQL</li>
             <li>MongoDB</li>
@@ -79,13 +79,15 @@
           <div class="project-card-inner">
             <div class="project-card-front">
               <h4>Petster</h4>
-              <p>Mobile pet adoption application, collaborated with another developer and UX desginer. </p>
+              <div>
+                <img id="petster-img"
+                src="https://static.wixstatic.com/media/735706_e4ff16cc0ce94735ad5c17b972c5b699~mv2.png/v1/fill/w_572,h_1040,al_c,q_90/735706_e4ff16cc0ce94735ad5c17b972c5b699~mv2.webp">
+              </div>
               <p class="project-card-tech">React Native | Redux | Node.js | PostgreSQL | Firebase</p>
             </div>
             <div class="project-card-back">
               <h4>Petster</h4>
-              <img id="petster-img"
-                src="https://static.wixstatic.com/media/735706_e4ff16cc0ce94735ad5c17b972c5b699~mv2.png/v1/fill/w_572,h_1040,al_c,q_90/735706_e4ff16cc0ce94735ad5c17b972c5b699~mv2.webp">
+              <p class="project-description">Mobile pet adoption application, built with React Native, Redux, Node.js and PostgreSQL. I collaborated with a UX designer and implemeted all the front end design. I also collaborated with another developer to build out the backend to support users searching for pets and saving pets to favorites.</p>
               <div class="project-card-back-mobile">
                 <p>Mobile pet adoption application built with React Native, Redux, Node.js, PosgreSQL, and Firebase</p>
               </div>
@@ -101,16 +103,16 @@
           <div class="project-card-inner">
             <div class="project-card-front">
               <h4>Valley Installers</h4>
-              <p>Responsive website for a small laminate installation business. Contract work collaborated with another
-                developer.</p>
+              <div>
+                <img class="website-img" src="./assets/valley-installers.png">
+              </div>
               <p class="project-card-tech">React | Next.js | CSS | HTML</p>
             </div>
             <div class="project-card-back">
               <h4>Valley Installers</h4>
-              <img class="website-img" src="./assets/valley-installers.png">
+              <p class="project-description">Responsive website for a small laminate installation business. Contract work collaborated with another developer. The website is complete with search engine optimization and react server-side rendering to increase visibility for relevant searches.</p>
               <div class="project-card-back-mobile">
-                <p>Responsive website for a small laminate installation business built with React, Next.js, CSS, and
-                  HTML</p>
+                <p>Responsive website for a small laminate installation business built with React, Next.js, CSS, and HTML</p>
               </div>
               <div class="project-card-buttons">
                 <a href="https://valleyinstallers.com" target="_blank">Website</a>
@@ -124,13 +126,15 @@
           <div class="project-card-inner">
             <div class="project-card-front">
               <h4>Color Swatches</h4>
-              <p>An app that displays random color swatches, allowing you to filter by color family and search for a
-                color swatch.</p>
+              <div>
+                <img class="website-img" src="./assets/color-swatches.png">
+              </div>
               <p class="project-card-tech">React | CSS | HTML</p>
             </div>
             <div class="project-card-back">
               <h4>Color Swatches</h4>
-              <img class="website-img" src="./assets/color-swatches.png">
+              <p class="project-description">An app that displays random color swatches, allowing you to filter by color family and search for a
+                color swatch.</p>
               <div class="project-card-back-mobile">
                 <p>An app that displays random color swatches built with React, CSS, and HTML</p>
               </div>
@@ -141,17 +145,16 @@
             </div>
           </div>
         </div>
-
-        <div class="project-card">
+        <div class="project-card project-card-no-image">
           <div class="project-card-inner">
             <div class="project-card-front">
               <h4>CaseHawk</h4>
-              <p>Internal case management tool for a law firm. Worked on a team of 10 developers to rebuild a site from
-                PHP to JavaScript/React.</p>
               <p class="project-card-tech">React | Node.js | Prisma</p>
             </div>
             <div class="project-card-back">
               <h4>CaseHawk</h4>
+              <p class="project-description">Internal case management tool for a law firm. Worked on a team of 10 developers to rebuild a site from
+                PHP to JavaScript/React.</p>
               <div class="project-card-back-mobile">
                 <p>Internal case management tool for a law firm built with React, Node.js, and Prisma</p>
               </div>
@@ -162,16 +165,16 @@
           </div>
         </div>
 
-        <div class="project-card">
+        <div class="project-card project-card-no-image">
           <div class="project-card-inner">
             <div class="project-card-front">
               <h4>Heeded</h4>
-              <p>Audience engagement analyzer application. Collaborated with a team of developers for my Code Fellows
-                midterm project.</p>
               <p class="project-card-tech">Javascript | Node.js | AWS</p>
             </div>
             <div class="project-card-back">
               <h4>Heeded</h4>
+              <p class="project-description">Audience engagement analyzer application. Collaborated with a team of developers for my Code Fellows
+                midterm project.</p>
               <div class="project-card-back-mobile">
                 <p>Audience engagement analyzer application built with JavaScript, Node.js and AWS</p>
               </div>
@@ -206,17 +209,6 @@
         <source src="./assets/petster-demo.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
-      <!-- <div class="pop-up-demo-content-features">
-        <h3>Features</h3>
-        <ul>
-          <li>Firebase Authentiation</li>
-          <li>Node.js server for searching petfinder's API, saving user's favorites, and search preferences</li>
-          <li>Firebase Authentiation</li>
-          <li>Firebase Authentiation</li>
-          <li>Firebase Authentiation</li>
-          <li>Firebase Authentiation</li>
-        </ul>
-      </div> -->
     </div>
   </div>
 
